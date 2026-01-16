@@ -4,9 +4,11 @@
 
     </head>
     <body>
-        <h1>HI IAM {{Name}} Des</h1>
+        <h1>Poll app Django</h1>
         <h2> 
-            {{request.user}}
+            {{request.user}} is the creator of this poll app.
         </h2>
+
+        <p><a href="{% url 'polls:index' %}">View the app</a></p>
     </body>
 </html>
